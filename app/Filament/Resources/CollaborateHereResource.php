@@ -54,7 +54,7 @@ class CollaborateHereResource extends Resource
             ->filters([
                 Tables\Filters\SelectFilter::make('title')
                     ->label('Judul Kolaborasi')
-                    ->options(fn () => \App\Models\CollaborateHere::query()->pluck('title', 'title')->toArray()),
+                    ->options(fn () => CollaborateHere::query()->pluck('title', 'title')->toArray()),
             ])
             ->actions([
                 Tables\Actions\ActionGroup::make([

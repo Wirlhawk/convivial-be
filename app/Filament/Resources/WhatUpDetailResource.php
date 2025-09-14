@@ -3,17 +3,13 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\WhatUpDetailResource\Pages;
-use App\Filament\Resources\WhatUpDetailResource\RelationManagers;
 use App\Models\WhatUpDetail;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\ImageColumn;
+
 use Filament\Tables\Columns\ViewColumn;
 
 class WhatUpDetailResource extends Resource

@@ -54,7 +54,7 @@ class TeamResource extends Resource
             ->filters([
                 Tables\Filters\SelectFilter::make('role_name')
                     ->label('Peran')
-                    ->options(fn () => \App\Models\Team::query()->pluck('role_name', 'role_name')->toArray()),
+                    ->options(fn () => Team::query()->pluck('role_name', 'role_name')->toArray()),
             ])
             ->actions([
                 Tables\Actions\ActionGroup::make([
