@@ -1,8 +1,11 @@
+import Navbar from '@/components/navbar/navbar';
+import React from 'react';
 
-import React from 'react'
-
-export default function MainLayout() {
-  return (
-    <div>MainLayout</div>
-  )
+export default function MainLayout({ children }: { children: React.ReactNode }) {
+    return (
+        <div>
+            <Navbar />
+            {children}
+        </div>
+    );
 }
